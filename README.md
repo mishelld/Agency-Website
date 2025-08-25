@@ -1,7 +1,7 @@
 # Agency Website
 
-A modern responsive **React website** built using **JSX** and **CSS**, transformed from a Figma design.  
-This project demonstrates how to convert a design file into a working React application.
+A modern responsive React website built with JSX and CSS.  
+This project was created as **practice for converting a Figma design into a working React application**.
 
 ## 🎨 Design Credit
 This project is based on a community Figma design by **Muntasir Billah**:  
