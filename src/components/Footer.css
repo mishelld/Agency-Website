@@ -1,0 +1,145 @@
+.footer {
+  background-color: #263238; /* dark gray */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+.footer-brand-name {
+  display: flex;
+  font-size: 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.footer-section li:hover {
+  text-decoration: underline;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-input {
+  flex: 1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #72727291;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  border: none; /* remove default border */
+}
+.footer-input::placeholder {
+  color: #ffffff; /* your desired color */
+  opacity: 1; /* ensures full opacity in some browsers */
+}
+
+.footer-socials-logo {
+  display: flex;
+  gap: 1.5rem; /* spacing between logos */
+  margin: 20px 0; /* space above/below */
+}
+
+.footer-socials-logo img {
+  width: 32px; /* adjust size */
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.footer-socials-logo img:hover {
+  transform: scale(1.2); /* hover effect */
+}
+.footer-input-container {
+  display: flex;
+  width: 100%;
+  max-width: 400px; /* adjust as needed */
+  position: relative;
+}
+.footer-btn {
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  color: #747474;
+  border-radius: 10px; /* rounded only on right */
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.footer-btn:hover {
+  background-color: #429545;
+}
+.footer-btn-icon {
+  width: 25px; /* adjust size */
+  height: 25px;
+  padding: 5px;
+  object-fit: contain;
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .footer-links {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px; /* smaller padding */
+    text-align: center; /* center align everything */
+  }
+
+  .footer-links {
+    flex-direction: column; /* stack sections vertically */
+    align-items: center;
+    gap: 2rem; /* spacing between stacked sections */
+  }
+  .footer-brand-name {
+    justify-content: center;
+  }
+  .footer-socials-logo {
+    justify-content: center;
+  }
+}

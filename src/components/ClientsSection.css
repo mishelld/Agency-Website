@@ -1,0 +1,38 @@
+.client-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 100px;
+}
+.client-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.client-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.client-text h1 {
+  color: #4d4d4d;
+}
+.client-text p {
+  color: #717171;
+}
+.client-text h1,
+.client-text p {
+  margin: 0;
+  padding: 0;
+}
+.client-logo {
+  transition: transform 0.3s ease; /* smooth scaling */
+}
+.client-logo:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .client-container {
+    padding: 30px 30px;
+  }
+}

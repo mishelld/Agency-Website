@@ -1,0 +1,36 @@
+.final-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+.final-container h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.final-btn {
+  padding: 15px 35px;
+  background-color: #4caf4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.final-btn:hover {
+  background-color: #429545;
+}
+
+.final-btn .final-arrow-icon {
+  width: 30px;
+  height: auto;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Keep hover separate */
+.final-btn:hover .final-arrow-icon {
+  transform: translateX(5px);
+}

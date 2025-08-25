@@ -1,0 +1,112 @@
+.caring-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center everything */
+  gap: 2rem;
+  padding: 50px 50px;
+
+  /* remove height: 100vh so content can grow naturally */
+}
+
+.caring-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.caring-text h1 {
+  font-size: 3rem;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.caring-text p {
+  color: #717171;
+  font-size: 1.1rem;
+}
+
+.caring-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.caring-item {
+  position: relative;
+  flex: 1 1 30%; /* each item takes ~30% width */
+  max-width: 400px; /* optional cap */
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease; /* smooth scaling */
+}
+.caring-item:hover {
+  transform: scale(1.05); /* 5% bigger */
+}
+
+.caring-img {
+  width: 100%; /* fill caring-item */
+  height: auto; /* maintain aspect ratio */
+  display: block;
+}
+
+.caring-box {
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translateX(-50%);
+  background: #f5f7fa;
+  color: #717171;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 50%; /* fixed height */
+  padding: 15px 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.caring-btn {
+  display: flex;
+  align-items: center;
+  color: #4caf4f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Hover effect */
+.caring-btn:hover {
+  color: #357a38; /* darker green on hover */
+}
+
+.caring-btn .caring-arrow-icon {
+  width: 30px;
+  height: auto;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Keep hover separate */
+.caring-btn:hover .caring-arrow-icon {
+  transform: translateX(5px);
+}
+@media (max-width: 1024px) {
+  .caring-items {
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center items */
+    gap: 100px; /* optional smaller gap */
+    padding: 20px 10px; /* smaller padding */
+  }
+
+  .caring-item {
+    width: 100%; /* full width of container */
+  }
+}

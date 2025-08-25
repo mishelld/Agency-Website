@@ -1,0 +1,81 @@
+.add-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 100px;
+  background-color: #f5f7fa;
+}
+
+.add-left-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-img {
+  height: auto; /* half of the parent container's width */
+  width: 60%;
+}
+
+.add-right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.add-right-side h1 {
+  color: #4caf4f;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.add-right-side p {
+  color: #717171;
+  font-size: 1rem;
+}
+.add-btn {
+  background-color: transparent;
+  color: #4caf4f;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn:hover {
+  color: #357a38; /* darker green on hover */
+}
+
+.add-btn .add-arrow-icon {
+  width: 30px;
+  height: auto;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Keep hover separate */
+.add-btn:hover .add-arrow-icon {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .add-container {
+    flex-direction: column; /* stack left and right sections vertically */
+    gap: 30px;
+  }
+
+  .add-left-side,
+  .add-right-side {
+    width: 100%; /* take full width */
+    justify-content: center; /* center content horizontally */
+  }
+
+  .add-img {
+    height: auto; /* half of the parent container's width */
+    width: 100%;
+  }
+}
